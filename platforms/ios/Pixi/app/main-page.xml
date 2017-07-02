@@ -1,0 +1,14 @@
+<Page loaded="pageLoaded">
+  <Page.actionBar>
+      <ActionBar title="Search"></ActionBar>
+  </Page.actionBar>
+  <StackLayout orientation="vertical">
+    <TextField width="300px" text="{{txtKeyword}}"  hint="Search Flickr" id="txtKeyword" />
+    <Button text="Search" height="50px" tap="signin" />
+    <ListView items="{{ images }}">
+        <ListView.itemTemplate>
+            <Image stretch="fill" height="400px" src="{{img}}" />
+        </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>
